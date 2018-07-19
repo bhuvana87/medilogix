@@ -108,6 +108,7 @@ a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
    ========================================================================== */
 .section {
   padding: 80px 0;
+  background: #eff8fe;
 }
 
 .section-header {
@@ -278,7 +279,7 @@ button:focus {
   width: 40px;
   height: 40px;
   text-align: center;
-  background: #ddd;
+  background: rgba(0,0,0,0.2);
   font-size: 16px;
 }
 
@@ -428,7 +429,7 @@ button:focus {
   font-size: 14px;
   text-align: center;
   border-radius: 0px;
-  background-color: #00a95b;
+  background-color: rgba(0,0,0,0.5);
   -webkit-transition: all 0.2s linear;
   -moz-transition: all 0.2s linear;
   -o-transition: all 0.2s linear;
@@ -439,7 +440,7 @@ button:focus {
    3. Hero Area
    ========================================================================== */
 #hero-area {
-  background: url(../img/bg5.jpg) fixed no-repeat;
+  background: url(../img/bg6.jpg) fixed no-repeat center center !important;
   background-size: cover;
   color: #fff;
   overflow: hidden;
@@ -550,8 +551,8 @@ button:focus {
   padding: 0 22px;
   margin-top: 10px;
   margin-bottom: 10px;
-  line-height: 32px;
-  border-radius: 30px;
+  line-height: 40px;
+  border-radius: 0px;
   background: transparent;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
@@ -1226,14 +1227,28 @@ li.nav-item.active a{
   height: 300px;
 }
 .contact-us p span {
-  color: #00a95b;
+  color: #fff;
   padding-left: 10px;
 }
-
+.contact-us a{
+  color: #fff;
+}
 #contact {
-  background: #f7f7f7;
-  color: #4c4c4c;
+  background: #00b1ec;
+  color: #fff;
   position: relative;
+}
+#contact ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: rgba(255,255,255,0.7);
+}
+#contact ::-moz-placeholder { /* Firefox 19+ */
+  color: rgba(255,255,255,0.7);
+}
+#contact :-ms-input-placeholder { /* IE 10+ */
+  color: rgba(255,255,255,0.7);
+}
+#contact :-moz-placeholder { /* Firefox 18- */
+  color: rgba(255,255,255,0.7);
 }
 #contact .form-group{
   margin-bottom: 3px !important;
@@ -1246,14 +1261,18 @@ li.nav-item.active a{
   width: 100%;
   margin-top: 10px;
   padding: 10px;
-  border-color: rgba(0,0,0,0.1);
+  border-color: rgba(255,255,255,0.7);
   border-radius: 0px;
-  color: #4c4c4c;
+  color: #fff;
   background: transparent;
   font-size: 12px;
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   transition: all 0.3s;
+}
+#contact .btn-common{
+  background: #fff;
+  color: #4c4c4c;
 }
 
 .form-control:focus {
@@ -1282,7 +1301,7 @@ li.nav-item.active a{
 15. Footer Style
  ========================================================================== */
 footer {
-  background: #292f35;
+  background: #019953;
   padding: 20px 0;
 }
 
@@ -1311,7 +1330,7 @@ footer {
 }
 
 .copyright p {
-  color: rgba(255,255,255,0.4);
+  color: rgba(255,255,255,0.7);
   font-size: 13px;
 }
 
@@ -1462,7 +1481,7 @@ footer {
     letter-spacing: 0.2px;
 }
 #accordion .panel-title a.collapsed{
-    background: #f8f8f8;
+    background: #fff;
     color: #4c4c4c;
 }
 #accordion .panel-title a.collapsed:hover{
