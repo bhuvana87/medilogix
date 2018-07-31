@@ -66,14 +66,14 @@
 /* 
    Touch Owl Carousel
    ========================================================================== */
-    var owl = $(".touch-slider");
+    var owl = $("#thumbnailslider");
     owl.owlCarousel({
-      navigation: false,
-      pagination: true,
+      navigation: true,
+      pagination: false,
       slideSpeed: 1000,
       stopOnHover: true,
       autoPlay: true,
-      items: 2,
+      items: 5,
       itemsDesktop : [1199,2],
       itemsDesktopSmall: [1024, 2],
       itemsTablet: [600, 1],
