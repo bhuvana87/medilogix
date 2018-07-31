@@ -70,7 +70,7 @@
     owl.owlCarousel({
       navigation: true,
       pagination: false,
-      slideSpeed: 1000,
+      slideSpeed: 500,
       stopOnHover: true,
       autoPlay: true,
       items: 5,

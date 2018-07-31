@@ -965,7 +965,8 @@ li.nav-item.active a{
  10. Counter Section Style
  ========================================================================== */
 .counters {
-  background: url(../img/counter.jpg) fixed;
+  background: url(../img/counter.jpg) no-repeat;
+  background-size: cover;
   position: relative;
 }
 .counters  .section-title, .counters a{
