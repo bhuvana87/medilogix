@@ -178,5 +178,12 @@ $('.card').click(function(){
   $(this).siblings().find('.collapse').removeClass('in');
 })
 
+$('#modal-popup').click(function(){
+  $('.modal-popup').fadeIn(300);
+});
+$('.modal-close').click(function(){
+  $('.modal-popup').fadeOut(300);
+})
+
 }(jQuery));
 
