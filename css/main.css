@@ -1414,6 +1414,30 @@ footer {
   overflow: hidden;
   position: relative;
 }
+.img-wrapper span {
+    display: block;
+    position: absolute;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+}
+.img-wrapper span a {
+    width: 50%;
+    display: inline-block;
+    background: #00b1ec;
+    line-height: 40px;
+    color: #fff !important;
+    white-space: nowrap;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.img-wrapper span a.active{
+  background: #00a95b;
+}
+.img-wrapper span a:hover{
+  background: #039acc;
+}
 #carousel-example .carousel-inner .item .img-wrapper img {
   left: 50%;
   position: absolute;
@@ -1422,6 +1446,9 @@ footer {
           transform: translate(-50%, -50%);
   width: 100%;
   /*object-fit: cover;*/
+}
+#carousel-example .carousel-inner li{
+  line-height: 26px;
 }
 #carousel-example .carousel-inner .item .carousel-caption {
   background: #fff;

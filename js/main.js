@@ -11,6 +11,11 @@
         }
     });
 
+    $('.toggle-btns a').click(function(){
+      var val = $(this).attr('data-target');
+      $('.tab-content').find('#' + val).fadeIn(300).siblings().hide();
+      $(this).toggleClass('active').siblings().removeClass('active');
+    })
     /* 
    One Page Navigation & wow js
    ========================================================================== */
