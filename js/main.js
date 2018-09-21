@@ -15,6 +15,7 @@
       var val = $(this).attr('data-target');
       $('.tab-content').find('#' + val).fadeIn(300).siblings().hide();
       $(this).toggleClass('active').siblings().removeClass('active');
+	  $(this).parent().parent().find('img.' + val).fadeIn(300).siblings().hide();
     })
     /* 
    One Page Navigation & wow js

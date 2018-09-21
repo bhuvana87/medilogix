@@ -110,7 +110,11 @@ a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
   padding: 80px 0;
   background: #eff8fe;
 }
-
+sup{
+	color: #DD1E4F;
+    font-size: 100%;
+    font-weight: bold;
+}
 .section-header {
   color: #fff;
   margin-bottom: 40px;
@@ -1624,4 +1628,10 @@ footer {
 .modal-popup-content  .lines{
   margin: 0;
   margin-bottom: 20px;
+}
+.showImg{
+	display: block;
+}
+.hideImg{
+	display:none;
 }
