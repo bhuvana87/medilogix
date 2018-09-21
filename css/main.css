@@ -1635,3 +1635,14 @@ footer {
 .hideImg{
 	display:none;
 }
+.pricing-section i.fa{
+	color: #00a95b;
+	font-size: 16px;
+	vertical-align:middle;
+	margin:0 10px 0 0;	
+}
+.facts-item i.fa{
+	font-size: 20px;
+	vertical-align:middle;
+	margin: 0 10px 0 0;	
+}
